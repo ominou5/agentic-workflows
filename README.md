@@ -14,3 +14,4 @@ A collection of all my agentic workflows, skills, prompts, etc.
   * **Self-Discovery Startup**: Detects the model CLIs (`codex`, `gemini`, `ollama`, `llm`, ...) and Claude models available on *your* machine, then builds a routing config calibrated to your plans and priorities — not a hardcoded roster.
   * **Opt-in Subagents**: Ships wrapper subagents that delegate to external models (GPT/Codex, Gemini, OpenRouter, local Ollama, etc.) and only fire on explicit request — safe for governed/brownfield repos.
   * **Hardened Delegation**: Verified CLI invocations with the stdin-hang, non-TTY stdout, versioned-model-pinning, and sandbox-isolation gotchas already solved.
+  * *Inspired by [@theo](https://x.com/theo) (t3.gg)'s posts on model-tiering for agent orchestration and using Codex as a delegation fallback.*
