@@ -118,7 +118,13 @@ your CLAUDE.md routing table. The `llm` CLI (one tool, many providers) is the
 lowest-effort way to add breadth.
 
 ## Credits
-Synthesizes two community patterns: model-tiering for orchestration (route by
-cost/intelligence/taste, escalate don't cheap-out) and CLI-delegation with
-report-back, hardened with the non-TTY / stdin / sandbox / opt-in lessons learned
-making it reliable in practice.
+Inspired by [@theo](https://x.com/theo) (t3.gg)'s posts on model-tiering for
+agent orchestration — keeping a `CLAUDE.md` section that prioritizes different
+models for different work, and teaching Claude Code to use Codex (and other CLIs)
+as delegation fallbacks for token-hungry tasks (implementation, computer-use,
+codebase analysis) while the primary model orchestrates.
+
+This skill generalizes that idea into a **self-discovering** setup (it detects
+each user's own models/CLIs instead of hardcoding a roster) and hardens the CLI
+delegation with the non-TTY / stdin-hang / versioned-model-pinning / sandbox-
+isolation / opt-in lessons learned making it reliable in practice.
